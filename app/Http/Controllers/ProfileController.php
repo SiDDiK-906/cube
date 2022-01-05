@@ -13,6 +13,9 @@ use Intervention\Image\Facades\Image;
 
 class ProfileController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     function profile_method(){
         return view('profile');
     }

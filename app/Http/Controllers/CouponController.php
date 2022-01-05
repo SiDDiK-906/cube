@@ -9,7 +9,9 @@ use App\Http\Requests\CouponValidation;
 
 class CouponController extends Controller
 {
-
+    public function __construct(){
+        $this->middleware('auth');
+    }
     public function index()
     {
         //

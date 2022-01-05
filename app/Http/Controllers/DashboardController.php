@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     function dashboard_method(){
         return view('dashboard',[
             'total_user'=> User::count(),

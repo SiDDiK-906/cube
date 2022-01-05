@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     function addCartFromWishlist_method($wishlist_id){
         $user_id = Auth()->id();
         $product_id = Wishlist::find($wishlist_id)->product_id;

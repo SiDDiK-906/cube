@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Session;
 
 class CheckoutController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     function checkout_method(Request $request){
 
         if (strpos(url()->previous(),'/cartlist') or strpos(url()->previous(),'/checkout')) {

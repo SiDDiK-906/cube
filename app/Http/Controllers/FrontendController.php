@@ -18,12 +18,16 @@ class FrontendController extends Controller
                 'categories'=> Category::latest()->limit(3)->get(),
                 'all_product_data'=> Product::all(),
                 'banner_datas'=>Banner::where('status','hide')->get(),
+                'new_arrivals' => Product::latest()->get(),
+                // 'new_arrivals' => Product::latest()->limit(4)->get(),
             ]);
         } else {
             return view('frontend.index',[
                 'categories'=> Category::where('cat_status','show')->get(),
                 'all_product_data'=> Product::all(),
                 'banner_datas'=>Banner::where('status','hide')->get(),
+                'new_arrivals' => Product::latest()->get(),
+                // 'new_arrivals' => Product::latest()->limit(4)->get(),
             ]);
         }
     }

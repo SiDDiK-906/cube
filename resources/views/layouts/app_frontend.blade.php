@@ -8,8 +8,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="robots" content="index, follow" />
-    <title>Rubik's Cube - Fashoin eCommerce HTML Template</title>
-    <meta name="description" content="Rubik's Cube - Fashoin eCommerce HTML Template" />
+    <title>Shop Cube - Online Fashoin Shopping Bangladesh</title>
+    <meta name="description" content="Shop Cube - Online Fashoin Shopping Bangladesh" />
     {{-- for sharer link image --}}
     @yield('og_image')
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -61,8 +61,8 @@
                 <div class="row">
                     <div class="col-auto align-self-center">
                         <div class="header-logo" style="display: flex;">
-                            <a href="{{ route('front_page') }}"><img src="{{ asset('frontend') }}/assets/images/logo/logo.png" style="margin-top: 10px;" alt="Site Logo" /></a>
-                            <a href="{{ route('front_page') }}"><img src="{{ asset('frontend') }}/assets/images/logo/cube.png" width="100px" alt="Site Logo" /></a>
+                            <a href="{{ route('front_page') }}"><img src="{{ asset('frontend') }}/assets/images/logo/logo.png"  width="100px" style="margin-top: 5px;" alt="Site Logo" /></a>
+                            <a href="{{ route('front_page') }}"><img src="{{ asset('frontend') }}/assets/images/logo/cube.png" width="75px" alt="Site Logo" /></a>
                         </div>
                     </div>
                     <div class="col align-self-center d-none d-lg-block">
@@ -102,7 +102,7 @@
 
                                             </ul>
                                         </li>
-                                        <li>
+                                        {{-- <li>
 
                                             <ul class="menu-banner w-100">
                                                 <li>
@@ -121,13 +121,12 @@
                                                             src="{{ asset('frontend') }}/assets/images/banner/9.jpg" alt=""></a>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </li>
-                                <li class="dropdown "><a href="#">Blogs <i class="pe-7s-angle-down"></i></a>
+                                <li class="dropdown "><a href="#">Category <i class="pe-7s-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="blog-grid.html">Blog Grid Page</a></li>
-                                        <li><a href="blog-single.html">Blog Single Page</a></li>
+                                        <li><a href="blog-grid.html">Category Page</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{ url('http://localhost/phpmyadmin/db_structure.php?server=1&db=cube') }}">Database</a></li>
@@ -402,26 +401,27 @@
                         <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
                             <div class="single-wedge">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="{{ asset('frontend') }}/assets/images/logo/logo-white.png" alt=""></a>
+                                    <a href="{{ route('front_page') }}"><img src="{{ asset('frontend') }}/assets/images/logo/logo.png"  width="100px" style="margin-top: 0px;" alt="Site Logo" /></a>
+                                    <a href="{{ route('front_page') }}"><img src="{{ asset('frontend') }}/assets/images/logo/cube.png" width="75px" alt="Site Logo" /></a>
                                 </div>
                                 <p class="about-text">Lorem ipsum dolor sit amet consectet adipisicing elit, sed do
                                     eiusmod templ incididunt ut labore et dolore magnaol aliqua Ut enim ad minim.
                                 </p>
                                 <ul class="link-follow">
                                     <li>
-                                        <a class="m-0" title="Twitter" href="#"><i class="fa fa-twitter"
+                                        <a class="m-0" title="Twitter" href="https://twitter.com/sid16115906"><i class="fa fa-twitter"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a title="Tumblr" href="#"><i class="fa fa-tumblr" aria-hidden="true"></i>
+                                        <a title="Github" href="https://github.com/SiDDiK-906"><i class="fa fa-github" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a title="Facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <a title="Facebook" href="https://www.facebook.com/siddik.cse.diu/"><i class="fa fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a title="Instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                        <a title="Instagram" href="https://www.instagram.com/siddik_sid_/"><i class="fa fa-instagram" aria-hidden="true"></i>
                                             </i>
                                         </a>
                                     </li>
@@ -513,9 +513,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <p class="copy-text"> © 2021 <strong>Jesco</strong> Made With <i class="fa fa-heart"
-                                    aria-hidden="true"></i> By <a class="company-name" href="https://hasthemes.com/">
-                                    <strong> HasThemes</strong></a>.</p>
+                            <p class="copy-text"> © 2022 <strong>Jesco</strong> Made <i class="fa fa-heart"
+                                    aria-hidden="true"></i> By <a class="company-name" href="https://github.com/SiDDiK-906">
+                                    <strong> SiDDiK</strong></a>.</p>
                         </div>
                     </div>
                 </div>
@@ -554,26 +554,26 @@
                     <div class="modal-body">
                         <div class="login-content">
                             <div class="api_login">
-                                <div class="item" style="display: flex; justify-content: center;background: #3b5998; margin-bottom:10px; padding:16px; border-radius:5px;">
+                                {{-- <div class="item" style="display: flex; justify-content: center;background: #3b5998; margin-bottom:10px; padding:16px; border-radius:5px;">
                                     <i class="fa fa-facebook" aria-hidden="true" style="color: white; margin-right:10px; font-size:20px;"></i>
                                     <a href="#" class="btn text-white">Sign in with Facebook</a>
-                                </div>
+                                </div> --}}
                                 <div class="item" style="background:#DD5144;display: flex; justify-content: center; margin-bottom:10px; padding:16px; border-radius:5px;">
                                     <i class="fa fa-google" aria-hidden="true" style="color: white; margin-right:10px; font-size:20px;"></i>
                                     <a href="{{ route('google_redirect') }}" class="btn text-white">Sign in with Google</a>
                                 </div>
-                                <div class="item" style="background:#00acee;display: flex; justify-content: center; margin-bottom:15px; padding:16px; border-radius:5px;">
+                                {{-- <div class="item" style="background:#00acee;display: flex; justify-content: center; margin-bottom:15px; padding:16px; border-radius:5px;">
                                     <i class="fa fa-twitter" aria-hidden="true" style="color: white; margin-right:10px; font-size:20px;"></i>
                                     <a href="#" class="btn text-white">Sign in with Twitter</a>
-                                </div>
-                                <div class="item" style="background:#333;display: flex; justify-content: center; margin-bottom:10px; padding:16px; border-radius:5px;">
+                                </div> --}}
+                                <div class="item" style="background:#3b5998;display: flex; justify-content: center; margin-bottom:10px; padding:16px; border-radius:5px;">
                                     <i class="fa fa-github" aria-hidden="true" style="color: white; margin-right:10px; font-size:20px;"></i>
                                     <a href="{{ route('github_redirect') }}" class="btn text-white">Sign in with Github</a>
                                 </div>
-                                <div class="item" style="background:#0e76a8; display: flex; justify-content: center; margin-bottom:15px; padding:16px; border-radius:5px;">
+                                {{-- <div class="item" style="background:#0e76a8; display: flex; justify-content: center; margin-bottom:15px; padding:16px; border-radius:5px;">
                                     <i class="fa fa-linkedin" aria-hidden="true" style="color: white; margin-right:10px; font-size:20px;"></i>
                                     <a href="#" class="btn text-white">Sign in with Linkedin</a>
-                                </div>
+                                </div> --}}
                             </div>
                             <p class="text-white text-center">------------ OR ------------</p>
                             <form action="{{ route('login') }}" method="POST">
